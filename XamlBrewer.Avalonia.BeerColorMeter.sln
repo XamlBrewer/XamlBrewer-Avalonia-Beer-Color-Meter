@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlBrewer.Avalonia.BeerColorMeter", "XamlBrewer.Avalonia.BeerColorMeter\XamlBrewer.Avalonia.BeerColorMeter.csproj", "{40AC2B69-AF18-4B02-A201-840E9DCC16B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlBrewer.Avalonia.BeerColorMeter.Android", "XamlBrewer.Avalonia.BeerColorMeter.Android\XamlBrewer.Avalonia.BeerColorMeter.Android.csproj", "{7F7E5928-5CE9-40D6-A239-8D43918F04E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamlBrewer.Avalonia.BeerColorMeter.Desktop", "XamlBrewer.Avalonia.BeerColorMeter.Desktop\XamlBrewer.Avalonia.BeerColorMeter.Desktop.csproj", "{DFBE7FBA-4B4F-4CC2-9761-D3CA49A6378A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40AC2B69-AF18-4B02-A201-840E9DCC16B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40AC2B69-AF18-4B02-A201-840E9DCC16B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40AC2B69-AF18-4B02-A201-840E9DCC16B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40AC2B69-AF18-4B02-A201-840E9DCC16B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7E5928-5CE9-40D6-A239-8D43918F04E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7E5928-5CE9-40D6-A239-8D43918F04E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7E5928-5CE9-40D6-A239-8D43918F04E6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F7E5928-5CE9-40D6-A239-8D43918F04E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7E5928-5CE9-40D6-A239-8D43918F04E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F7E5928-5CE9-40D6-A239-8D43918F04E6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DFBE7FBA-4B4F-4CC2-9761-D3CA49A6378A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBE7FBA-4B4F-4CC2-9761-D3CA49A6378A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBE7FBA-4B4F-4CC2-9761-D3CA49A6378A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBE7FBA-4B4F-4CC2-9761-D3CA49A6378A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59125C2D-9688-4286-A1C2-661067DB5291}
+	EndGlobalSection
+EndGlobal

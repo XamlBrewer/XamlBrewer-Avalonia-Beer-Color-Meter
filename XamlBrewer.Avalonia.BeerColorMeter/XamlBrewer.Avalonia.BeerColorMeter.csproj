@@ -13,11 +13,13 @@
 
   
   <ItemGroup>
+    <AvaloniaResource Remove="Assets\AvaloniaUILogo.png" />
     <AvaloniaResource Remove="Assets\Beer.jpg" />
   </ItemGroup>
 
   
   <ItemGroup>
+    <None Remove="Assets\AvaloniaUILogo.png" />
     <None Remove="Assets\Beer.jpg" />
   </ItemGroup>
 
@@ -37,5 +39,15 @@
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
     <PackageReference Include="SkiaSharp" Version="2.88.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Assets\AvaloniaUILogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\AvaloniaUILogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -62,11 +62,12 @@
             HorizontalContentAlignment="Center"
             Margin="0 20" Background="SaddleBrown"
             Grid.Column="1" />
-    <Image x:Name="FullImage" Source="resm:XamlBrewer.Avalonia.BeerColorMeter.Assets.Beer.jpg"
-                           VerticalAlignment="Stretch"
-                           HorizontalAlignment="Stretch"
-                           Grid.Row="1"
-                           Grid.Column="1" />
+    <Image x:Name="FullImage"
+           Source="resm:XamlBrewer.Avalonia.BeerColorMeter.Assets.Beer.jpg"
+           VerticalAlignment="Stretch"
+           HorizontalAlignment="Stretch"
+           Grid.Row="1"
+           Grid.Column="1" />
     <Button Content="Calculate"
             Click="Calculate_Click"
             HorizontalAlignment="Stretch"
@@ -110,7 +111,7 @@
              Width="96"
              Margin="8"
              Grid.RowSpan="5"
-             Grid.ColumnSpan="3">
+             Grid.ColumnSpan="4">
       <Canvas Height="80"
               Width="200"
               Background="Transparent">
@@ -147,5 +148,13 @@
         </Grid>
       </Canvas>
     </Viewbox>
+
+    <Image Source="resm:XamlBrewer.Avalonia.BeerColorMeter.Assets.AvaloniaUILogo.png"
+           HorizontalAlignment="Right"
+           VerticalAlignment="Bottom"
+           Width="80"
+           Margin="8"
+           Grid.RowSpan="5"
+           Grid.ColumnSpan="4" />
   </Grid>
 </UserControl>

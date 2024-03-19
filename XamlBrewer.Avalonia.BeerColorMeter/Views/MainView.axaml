@@ -18,7 +18,7 @@
       <RowDefinition Height="*" />
       <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
-      <RowDefinition Height="20" />
+      <RowDefinition Height="30" />
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="*" />
@@ -76,33 +76,36 @@
             Grid.Row="2"
             Grid.Column="1" />
 
-    <Grid x:Name="Result"
+    <Border x:Name="Result"
           HorizontalAlignment="Stretch"
           VerticalAlignment="Stretch"
+          CornerRadius="8"
           Grid.Row="3"
           Grid.Column="1">
-      <Border x:Name="ClosestBeerColor"
-              HorizontalAlignment="Stretch"
-              VerticalAlignment="Stretch"
-              CornerRadius="8"
-              Margin="40">
-        <TextBlock x:Name="ClosestBeerColorText"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
-                   FontSize="18"
-                   TextWrapping="Wrap"
-                   TextAlignment="Center" />
-      </Border>
-      <Slider x:Name="BeerColorSlider"
-              ValueChanged="BeerColorSlider_ValueChanged"
-              Minimum="0"
-              Maximum="40"
-              SmallChange=".5"
-              LargeChange=".5"
-              HorizontalAlignment="Stretch"
-              VerticalAlignment="Bottom"
-              Margin="40 0" />
-    </Grid>
+      <Grid>
+        <Border x:Name="ClosestBeerColor"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                CornerRadius="8"
+                Margin="40">
+          <TextBlock x:Name="ClosestBeerColorText"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     FontSize="18"
+                     TextWrapping="Wrap"
+                     TextAlignment="Center" />
+        </Border>
+        <Slider x:Name="BeerColorSlider"
+                ValueChanged="BeerColorSlider_ValueChanged"
+                Minimum="0"
+                Maximum="40"
+                SmallChange=".5"
+                LargeChange=".5"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom"
+                Margin="40 0" />
+      </Grid>
+    </Border>
 
     <!-- XAML Brewer Logo -->
     <Viewbox StretchDirection="DownOnly"

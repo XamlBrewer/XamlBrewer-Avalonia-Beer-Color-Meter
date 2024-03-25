@@ -60,8 +60,13 @@
             Click="PickImage_Click"
             HorizontalAlignment="Stretch"
             HorizontalContentAlignment="Center"
-            Margin="0 20" Background="SaddleBrown"
-            Grid.Column="1" />
+            Margin="0 20"
+            Foreground="White"
+            Grid.Column="1" >
+      <Button.Background>
+        <SolidColorBrush Color="SaddleBrown" Opacity=".5" />
+      </Button.Background>
+    </Button>
     <Image x:Name="FullImage"
            Source="resm:XamlBrewer.Avalonia.BeerColorMeter.Assets.Beer.jpg"
            VerticalAlignment="Stretch"
@@ -72,6 +77,7 @@
             Click="Calculate_Click"
             HorizontalAlignment="Stretch"
             HorizontalContentAlignment="Center"
+            Foreground="White"
             Margin="0 20"
             Grid.Row="2"
             Grid.Column="1" />
